@@ -1,36 +1,54 @@
-## React APP using Redux and Typescript
+# React APP using Redux and Typescript
+
+## ❔ About
 
 This project can be used as a boilerplate to another app,
 
 The project is already setup with redux, it can be modified in any way.
 It has already a ADD and REMOVE article used as example to illustrate the use of Redux.
 
-## Available Scripts
+<p align="center"><b>Screenshot</b></p>
+<p align="center">
+  <img src="https://github.com/abnersouza/article-app-with-redux/blob/master/public/screenshots/article-app.png" alt="Screenshot" />
+</p>
 
-In the project directory, you can run:
+## 🛠 Tech Stack
 
-### `npm start`
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/basics/usage-with-react)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Fork the Repository:
 
-### `npm test`
+Simply click on the “fork” button of the repository page on GitHub.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the Repository:
 
-### `npm build`
+```
+git clone https://github.com/abnersouza/article-app-with-redux.git
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How to Run, Build and Run the Tests
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+# Navigate to root directory
+> cd ./article-app-with-redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install all dependencies
+> npm install
+
+# Run localhost
+> npm run start
+
+# Run the tests
+> npm run test
+
+# Build for production, it creates a folder called /build
+> npm run build
+
+```
 
 ## Credits
 
