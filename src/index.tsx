@@ -1,18 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore, applyMiddleware, Store } from "redux";
 import { Provider } from "react-redux";
-import thunk from "redux-thunk";
+
+import App from "./App";
 
 import "./index.css";
-import App from "./App";
-import reducer from "./store/reducer";
 
 import * as serviceWorker from "./serviceWorker";
-
-const store: Store<ArticleState, ArticleAction> & {
-  dispatch: DispatchType;
-} = createStore(reducer, applyMiddleware(thunk));
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>

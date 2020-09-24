@@ -1,17 +1,17 @@
-import * as actionTypes from "./actionTypes"
+import * as articleTypes from "./types";
 
-export function addArticle(article: IArticle) {
+export function addArticle(article: Article) {
   const action: ArticleAction = {
-    type: actionTypes.ADD_ARTICLE,
+    type: articleTypes.ADD_ARTICLE,
     article
   }
 
   return simulateHttpRequest(action)
 }
 
-export function removeArticle(article: IArticle) {
+export function removeArticle(article: Article) {
   const action: ArticleAction = {
-    type: actionTypes.REMOVE_ARTICLE,
+    type: articleTypes.REMOVE_ARTICLE,
     article
   }
 
@@ -26,3 +26,4 @@ export function simulateHttpRequest(action: ArticleAction) {
     }, 500)
   }
 }
+

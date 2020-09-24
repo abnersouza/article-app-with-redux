@@ -1,11 +1,11 @@
 import React, { FC, FormEvent, useState } from "react";
 
 type Props = {
-  saveArticle: (article: IArticle | any) => void;
+  saveArticle: (article: Article | any) => void;
 };
 
 export const AddArticle: FC<Props> = ({ saveArticle }) => {
-  const [article, setArticle] = useState<IArticle | {}>();
+  const [article, setArticle] = useState<Article | {}>();
 
   const handleArticleData = (e: FormEvent<HTMLInputElement>) => {
     setArticle({

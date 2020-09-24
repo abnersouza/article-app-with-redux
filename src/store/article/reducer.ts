@@ -1,4 +1,4 @@
-import * as actionTypes from "./actionTypes";
+import * as articleTypes from "./types";
 
 const initialState: ArticleState = {
   articles: [
@@ -15,13 +15,13 @@ const initialState: ArticleState = {
   ]
 }
 
-const reducer = (
+const articleReducer = (
   state: ArticleState = initialState,
   action: ArticleAction
 ): ArticleState => {
   switch (action.type) {
-    case actionTypes.ADD_ARTICLE:
-      const newArticle: IArticle = {
+    case articleTypes.ADD_ARTICLE:
+      const newArticle: Article = {
         id: Math.random(),
         title: action.article.title,
         body: action.article.body
@@ -32,8 +32,8 @@ const reducer = (
         articles: state.articles.concat(newArticle)
       }
 
-    case actionTypes.REMOVE_ARTICLE:
-      const updatedArticles: IArticle[] = state.articles.filter(
+    case articleTypes.REMOVE_ARTICLE:
+      const updatedArticles: Article[] = state.articles.filter(
         article => article.id !== action.article.id
       )
 
@@ -41,8 +41,9 @@ const reducer = (
         ...state,
         articles: updatedArticles
       }
+    default:
+      return state
   }
-  return state
 }
 
-export default reducer
+export default articleReducer;

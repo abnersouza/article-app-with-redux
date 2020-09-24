@@ -1,0 +1,14 @@
+.postItem {
+  margin: 2rem;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.postItem > h1 {
+  margin-bottom: 1rem;
+}

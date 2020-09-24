@@ -4,15 +4,15 @@ import { Dispatch } from "redux";
 import { useDispatch } from "react-redux";
 
 type Props = {
-  article: IArticle;
-  removeArticle: (article: IArticle) => void;
+  article: Article;
+  removeArticle: (article: Article) => void;
 };
 
-export const Article: FC<Props> = ({ article, removeArticle }) => {
+export const ArticleItem: FC<Props> = ({ article, removeArticle }) => {
   const dispatch: Dispatch<any> = useDispatch();
 
   const deleteArticle = useCallback(
-    (article: IArticle) => dispatch(removeArticle(article)),
+    (article: Article) => dispatch(removeArticle(article)),
     [dispatch, removeArticle]
   );
 
