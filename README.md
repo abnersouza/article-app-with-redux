@@ -9,7 +9,7 @@ It has already a ADD and REMOVE article used as example to illustrate the use of
 
 <p align="center"><b>Screenshot</b></p>
 <p align="center">
-  <img src="https://github.com/abnersouza/article-app-with-redux/blob/master/public/screenshots/article-app.png" alt="Screenshot" />
+  <img src="https://github.com/abnersouza/article-app-with-redux/blob/master/public/assets/screenshots/article-app.png" alt="Screenshot" />
 </p>
 
 ## 🛠 Tech Stack
