@@ -3,6 +3,8 @@ import React, { FC, useCallback } from "react";
 import { Dispatch } from "redux";
 import { useDispatch } from "react-redux";
 
+import "./ArticleItem.css";
+
 type Props = {
   article: Article;
   removeArticle: (article: Article) => void;

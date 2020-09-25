@@ -29,7 +29,7 @@ const articleReducer = (
 
       return {
         ...state,
-        articles: state.articles.concat(newArticle)
+        articles: [newArticle].concat(state.articles)
       }
 
     case articleTypes.REMOVE_ARTICLE:

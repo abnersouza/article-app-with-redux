@@ -1,0 +1,39 @@
+.Article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.Article:not(:last-child) {
+  border-bottom: 2px solid #f5f6f7;
+}
+
+.Article h1 {
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.Article p {
+  padding-right: 1rem;
+  color: #444;
+}
+
+.Article button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d34b4b;
+  background: #d34b4b;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Article button:hover {
+  background: #e06a6a;
+}

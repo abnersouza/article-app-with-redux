@@ -1,14 +1,21 @@
 import { Post } from "./post";
 
 export const GET_POSTS = 'GET_POSTS';
+export const ADD_POST = 'ADD_POST';
 
 export type PostState = {
   posts: Post[];
 }
 
-type GetPostsAction = {
+export type GetPosts = {
   type: typeof GET_POSTS;
   payload: Post[];
 }
 
-export type PostActions = GetPostsAction;
+export type AddPost = {
+  type: typeof ADD_POST;
+  payload: Post
+}
+
+export type PostActions = GetPosts | AddPost;
+

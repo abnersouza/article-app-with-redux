@@ -1,0 +1,24 @@
+.Posts {
+  padding: 2rem;
+}
+
+.Posts__buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Posts__buttonsContainer button {
+  background-color: #0784d2;
+  border: 1px solid #dcdcdc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Posts__buttonsContainer button:hover {
+  background-color: #0e94e8;
+}
+
+.Posts__buttonsContainer button:last-child {
+  margin-left: 0 !important;
+}

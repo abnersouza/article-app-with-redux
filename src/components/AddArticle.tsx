@@ -1,5 +1,7 @@
 import React, { FC, FormEvent, useState } from "react";
 
+import "./AddArticle.css";
+
 type Props = {
   saveArticle: (article: Article | any) => void;
 };
@@ -20,23 +22,23 @@ export const AddArticle: FC<Props> = ({ saveArticle }) => {
   };
 
   return (
-    <form onSubmit={addNewArticle} className="Add-article">
+    <form onSubmit={addNewArticle} className="AddArticle">
       <input
         type="text"
         id="title"
         placeholder="Title"
         onChange={handleArticleData}
+        required
       />
       <input
         type="text"
         id="body"
         placeholder="Description"
         onChange={handleArticleData}
+        required
       />
 
-      <button disabled={article === undefined ? true : false}>
-        Add article
-      </button>
+      <button type="submit">Add Article</button>
     </form>
   );
 };

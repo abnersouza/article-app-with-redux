@@ -1,7 +1,7 @@
 import React from "react";
-import { Post } from "../../store/post/post";
+import { Post } from "../store/post/post";
 
-import "./styles.css";
+import "./PostItem.css";
 
 type Props = {
   post: Post;
@@ -9,8 +9,10 @@ type Props = {
 
 const PostItem = ({ post }: Props) => {
   return (
-    <div className="postItem" key={post.id}>
-      <h1>{post.title}</h1>
+    <div className="postItem">
+      <h1>
+        #{post.id} {post.title}
+      </h1>
       <p>{post.body}</p>
     </div>
   );
