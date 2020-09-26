@@ -9,7 +9,7 @@ type Props = {
 
 const PostItem = ({ post }: Props) => {
   return (
-    <div className="postItem">
+    <div className="PostItem">
       <h1>
         #{post.id} {post.title}
       </h1>

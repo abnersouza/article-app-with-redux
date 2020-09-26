@@ -19,7 +19,7 @@ export const ArticleItem: FC<Props> = ({ article, removeArticle }) => {
   );
 
   return (
-    <div className="Article">
+    <div className="ArticleItem">
       <div>
         <h1>{article.title}</h1>
         <p>{article.body}</p>

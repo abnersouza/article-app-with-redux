@@ -1,39 +1,41 @@
-.Article {
+.ArticleItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background: #fff;
-  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.Article:not(:last-child) {
+.ArticleItem:not(:last-child) {
   border-bottom: 2px solid #f5f6f7;
 }
 
-.Article h1 {
-  color: #222;
+.ArticleItem div > h1 {
+  color: #1aab8a;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
-.Article p {
-  padding-right: 1rem;
+.ArticleItem div > p {
+  margin-top: 1rem;
+  padding-right: 1.5rem;
+  text-align: justify;
   color: #444;
+  line-height: 1.5rem;
 }
 
-.Article button {
-  padding: 0.5rem 0.7rem;
-  border: 1px solid #d34b4b;
+.ArticleItem > button {
   background: #d34b4b;
-  color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  outline: none;
 }
 
-.Article button:hover {
-  background: #e06a6a;
+.ArticleItem > button:hover {
+  background: transparent;
+  color: #d34b4b;
+}
+
+.ArticleItem > button:before,
+.ArticleItem > button:after {
+  background: #d34b4b;
 }
