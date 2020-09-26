@@ -13,6 +13,7 @@ There are two possible redux style implementation
 - The other one is used for the Posts (src/store/post)
 
 I personally prefer the second one. But few free to implement the one that makes more sense for you and your team.
+One thing that you might considerer is to use [Redux ducks pattern](https://github.com/erikras/ducks-modular-redux), it is for those who love to add all in one place, it just a matter of taste, you could also add [RTK](https://github.com/reduxjs/redux-toolkit) which makes everything much more fun. 
 
 [Redux Style Guide](https://redux.js.org/style-guide/style-guide#introduction)
 
